@@ -4,8 +4,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/xtls/xray-core/common/protocol"
-	"github.com/xtls/xray-core/common/uuid"
+	"github.com/AikoPanel/Xray-core/common/protocol"
+	"github.com/AikoPanel/Xray-core/common/uuid"
 )
 
 // Validator stores valid VLESS users.

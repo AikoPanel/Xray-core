@@ -3,9 +3,9 @@ package inbound
 import (
 	"context"
 
-	"github.com/xtls/xray-core/common"
-	"github.com/xtls/xray-core/common/net"
-	"github.com/xtls/xray-core/features"
+	"github.com/AikoPanel/Xray-core/common"
+	"github.com/AikoPanel/Xray-core/common/net"
+	"github.com/AikoPanel/Xray-core/features"
 )
 
 // Handler is the interface for handlers that process inbound connections.

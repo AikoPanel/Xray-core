@@ -4,9 +4,9 @@ import (
 	"context"
 	"testing"
 
-	. "github.com/xtls/xray-core/app/stats"
-	"github.com/xtls/xray-core/common"
-	"github.com/xtls/xray-core/features/stats"
+	. "github.com/AikoPanel/Xray-core/app/stats"
+	"github.com/AikoPanel/Xray-core/common"
+	"github.com/AikoPanel/Xray-core/features/stats"
 )
 
 func TestStatsCounter(t *testing.T) {

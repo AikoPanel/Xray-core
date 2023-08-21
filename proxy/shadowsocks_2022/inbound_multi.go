@@ -7,6 +7,16 @@ import (
 	"strings"
 	"sync"
 
+	"github.com/AikoPanel/Xray-core/common"
+	"github.com/AikoPanel/Xray-core/common/buf"
+	"github.com/AikoPanel/Xray-core/common/log"
+	"github.com/AikoPanel/Xray-core/common/net"
+	"github.com/AikoPanel/Xray-core/common/protocol"
+	"github.com/AikoPanel/Xray-core/common/session"
+	"github.com/AikoPanel/Xray-core/common/singbridge"
+	"github.com/AikoPanel/Xray-core/common/uuid"
+	"github.com/AikoPanel/Xray-core/features/routing"
+	"github.com/AikoPanel/Xray-core/transport/internet/stat"
 	"github.com/sagernet/sing-shadowsocks/shadowaead_2022"
 	C "github.com/sagernet/sing/common"
 	A "github.com/sagernet/sing/common/auth"
@@ -15,16 +25,6 @@ import (
 	E "github.com/sagernet/sing/common/exceptions"
 	M "github.com/sagernet/sing/common/metadata"
 	N "github.com/sagernet/sing/common/network"
-	"github.com/xtls/xray-core/common"
-	"github.com/xtls/xray-core/common/buf"
-	"github.com/xtls/xray-core/common/log"
-	"github.com/xtls/xray-core/common/net"
-	"github.com/xtls/xray-core/common/protocol"
-	"github.com/xtls/xray-core/common/session"
-	"github.com/xtls/xray-core/common/singbridge"
-	"github.com/xtls/xray-core/common/uuid"
-	"github.com/xtls/xray-core/features/routing"
-	"github.com/xtls/xray-core/transport/internet/stat"
 )
 
 func init() {

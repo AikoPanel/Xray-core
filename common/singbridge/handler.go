@@ -4,14 +4,14 @@ import (
 	"context"
 	"io"
 
+	"github.com/AikoPanel/Xray-core/common/buf"
+	"github.com/AikoPanel/Xray-core/common/errors"
+	"github.com/AikoPanel/Xray-core/common/net"
+	"github.com/AikoPanel/Xray-core/common/session"
+	"github.com/AikoPanel/Xray-core/features/routing"
+	"github.com/AikoPanel/Xray-core/transport"
 	M "github.com/sagernet/sing/common/metadata"
 	N "github.com/sagernet/sing/common/network"
-	"github.com/xtls/xray-core/common/buf"
-	"github.com/xtls/xray-core/common/errors"
-	"github.com/xtls/xray-core/common/net"
-	"github.com/xtls/xray-core/common/session"
-	"github.com/xtls/xray-core/features/routing"
-	"github.com/xtls/xray-core/transport"
 )
 
 var (

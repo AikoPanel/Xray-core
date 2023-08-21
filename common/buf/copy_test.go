@@ -5,10 +5,10 @@ import (
 	"io"
 	"testing"
 
+	"github.com/AikoPanel/Xray-core/common/buf"
+	"github.com/AikoPanel/Xray-core/common/errors"
+	"github.com/AikoPanel/Xray-core/testing/mocks"
 	"github.com/golang/mock/gomock"
-	"github.com/xtls/xray-core/common/buf"
-	"github.com/xtls/xray-core/common/errors"
-	"github.com/xtls/xray-core/testing/mocks"
 )
 
 func TestReadError(t *testing.T) {

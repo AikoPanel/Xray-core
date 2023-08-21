@@ -7,10 +7,10 @@ import (
 	"io"
 	"testing"
 
+	"github.com/AikoPanel/Xray-core/common"
+	. "github.com/AikoPanel/Xray-core/common/buf"
+	"github.com/AikoPanel/Xray-core/transport/pipe"
 	"github.com/google/go-cmp/cmp"
-	"github.com/xtls/xray-core/common"
-	. "github.com/xtls/xray-core/common/buf"
-	"github.com/xtls/xray-core/transport/pipe"
 )
 
 func TestWriter(t *testing.T) {

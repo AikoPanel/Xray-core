@@ -1,6 +1,6 @@
 package outbound
 
-//go:generate go run github.com/xtls/xray-core/common/errors/errorgen
+//go:generate go run github.com/AikoPanel/Xray-core/common/errors/errorgen
 
 import (
 	"bytes"
@@ -11,26 +11,26 @@ import (
 	"time"
 	"unsafe"
 
+	"github.com/AikoPanel/Xray-core/common"
+	"github.com/AikoPanel/Xray-core/common/buf"
+	"github.com/AikoPanel/Xray-core/common/net"
+	"github.com/AikoPanel/Xray-core/common/protocol"
+	"github.com/AikoPanel/Xray-core/common/retry"
+	"github.com/AikoPanel/Xray-core/common/session"
+	"github.com/AikoPanel/Xray-core/common/signal"
+	"github.com/AikoPanel/Xray-core/common/task"
+	"github.com/AikoPanel/Xray-core/common/xudp"
+	"github.com/AikoPanel/Xray-core/core"
+	"github.com/AikoPanel/Xray-core/features/policy"
+	"github.com/AikoPanel/Xray-core/features/stats"
+	"github.com/AikoPanel/Xray-core/proxy/vless"
+	"github.com/AikoPanel/Xray-core/proxy/vless/encoding"
+	"github.com/AikoPanel/Xray-core/transport"
+	"github.com/AikoPanel/Xray-core/transport/internet"
+	"github.com/AikoPanel/Xray-core/transport/internet/reality"
+	"github.com/AikoPanel/Xray-core/transport/internet/stat"
+	"github.com/AikoPanel/Xray-core/transport/internet/tls"
 	utls "github.com/refraction-networking/utls"
-	"github.com/xtls/xray-core/common"
-	"github.com/xtls/xray-core/common/buf"
-	"github.com/xtls/xray-core/common/net"
-	"github.com/xtls/xray-core/common/protocol"
-	"github.com/xtls/xray-core/common/retry"
-	"github.com/xtls/xray-core/common/session"
-	"github.com/xtls/xray-core/common/signal"
-	"github.com/xtls/xray-core/common/task"
-	"github.com/xtls/xray-core/common/xudp"
-	"github.com/xtls/xray-core/core"
-	"github.com/xtls/xray-core/features/policy"
-	"github.com/xtls/xray-core/features/stats"
-	"github.com/xtls/xray-core/proxy/vless"
-	"github.com/xtls/xray-core/proxy/vless/encoding"
-	"github.com/xtls/xray-core/transport"
-	"github.com/xtls/xray-core/transport/internet"
-	"github.com/xtls/xray-core/transport/internet/reality"
-	"github.com/xtls/xray-core/transport/internet/stat"
-	"github.com/xtls/xray-core/transport/internet/tls"
 )
 
 func init() {

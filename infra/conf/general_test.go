@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/xtls/xray-core/common"
-	. "github.com/xtls/xray-core/infra/conf"
+	"github.com/AikoPanel/Xray-core/common"
+	. "github.com/AikoPanel/Xray-core/infra/conf"
 	"google.golang.org/protobuf/proto"
 )
 

@@ -5,15 +5,15 @@ import (
 	"testing"
 	"time"
 
+	"github.com/AikoPanel/Xray-core/common"
+	"github.com/AikoPanel/Xray-core/common/errors"
+	"github.com/AikoPanel/Xray-core/common/mux"
+	"github.com/AikoPanel/Xray-core/common/net"
+	"github.com/AikoPanel/Xray-core/common/session"
+	"github.com/AikoPanel/Xray-core/testing/mocks"
+	"github.com/AikoPanel/Xray-core/transport"
+	"github.com/AikoPanel/Xray-core/transport/pipe"
 	"github.com/golang/mock/gomock"
-	"github.com/xtls/xray-core/common"
-	"github.com/xtls/xray-core/common/errors"
-	"github.com/xtls/xray-core/common/mux"
-	"github.com/xtls/xray-core/common/net"
-	"github.com/xtls/xray-core/common/session"
-	"github.com/xtls/xray-core/testing/mocks"
-	"github.com/xtls/xray-core/transport"
-	"github.com/xtls/xray-core/transport/pipe"
 )
 
 func TestIncrementalPickerFailure(t *testing.T) {

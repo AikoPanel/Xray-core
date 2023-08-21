@@ -9,10 +9,10 @@ import (
 	"syscall"
 	"time"
 
+	"github.com/AikoPanel/Xray-core/common/net"
+	"github.com/AikoPanel/Xray-core/common/session"
 	"github.com/pires/go-proxyproto"
 	"github.com/sagernet/sing/common/control"
-	"github.com/xtls/xray-core/common/net"
-	"github.com/xtls/xray-core/common/session"
 )
 
 var effectiveListener = DefaultListener{}

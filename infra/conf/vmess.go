@@ -4,12 +4,12 @@ import (
 	"encoding/json"
 	"strings"
 
-	"github.com/xtls/xray-core/common/protocol"
-	"github.com/xtls/xray-core/common/serial"
-	"github.com/xtls/xray-core/common/uuid"
-	"github.com/xtls/xray-core/proxy/vmess"
-	"github.com/xtls/xray-core/proxy/vmess/inbound"
-	"github.com/xtls/xray-core/proxy/vmess/outbound"
+	"github.com/AikoPanel/Xray-core/common/protocol"
+	"github.com/AikoPanel/Xray-core/common/serial"
+	"github.com/AikoPanel/Xray-core/common/uuid"
+	"github.com/AikoPanel/Xray-core/proxy/vmess"
+	"github.com/AikoPanel/Xray-core/proxy/vmess/inbound"
+	"github.com/AikoPanel/Xray-core/proxy/vmess/outbound"
 	"google.golang.org/protobuf/proto"
 )
 

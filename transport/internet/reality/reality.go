@@ -24,18 +24,18 @@ import (
 	"time"
 	"unsafe"
 
+	"github.com/AikoPanel/Xray-core/common/errors"
+	"github.com/AikoPanel/Xray-core/common/net"
+	"github.com/AikoPanel/Xray-core/core"
+	"github.com/AikoPanel/Xray-core/transport/internet/tls"
 	utls "github.com/refraction-networking/utls"
 	"github.com/xtls/reality"
-	"github.com/xtls/xray-core/common/errors"
-	"github.com/xtls/xray-core/common/net"
-	"github.com/xtls/xray-core/core"
-	"github.com/xtls/xray-core/transport/internet/tls"
 	"golang.org/x/crypto/chacha20poly1305"
 	"golang.org/x/crypto/hkdf"
 	"golang.org/x/net/http2"
 )
 
-//go:generate go run github.com/xtls/xray-core/common/errors/errorgen
+//go:generate go run github.com/AikoPanel/Xray-core/common/errors/errorgen
 
 //go:linkname aesgcmPreferred github.com/refraction-networking/utls.aesgcmPreferred
 func aesgcmPreferred(ciphers []uint16) bool

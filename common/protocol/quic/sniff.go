@@ -7,12 +7,12 @@ import (
 	"encoding/binary"
 	"io"
 
+	"github.com/AikoPanel/Xray-core/common"
+	"github.com/AikoPanel/Xray-core/common/buf"
+	"github.com/AikoPanel/Xray-core/common/bytespool"
+	"github.com/AikoPanel/Xray-core/common/errors"
+	ptls "github.com/AikoPanel/Xray-core/common/protocol/tls"
 	"github.com/quic-go/quic-go/quicvarint"
-	"github.com/xtls/xray-core/common"
-	"github.com/xtls/xray-core/common/buf"
-	"github.com/xtls/xray-core/common/bytespool"
-	"github.com/xtls/xray-core/common/errors"
-	ptls "github.com/xtls/xray-core/common/protocol/tls"
 	"golang.org/x/crypto/hkdf"
 )
 

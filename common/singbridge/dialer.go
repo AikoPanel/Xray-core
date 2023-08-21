@@ -4,15 +4,15 @@ import (
 	"context"
 	"os"
 
+	"github.com/AikoPanel/Xray-core/common/net"
+	"github.com/AikoPanel/Xray-core/common/net/cnc"
+	"github.com/AikoPanel/Xray-core/common/session"
+	"github.com/AikoPanel/Xray-core/proxy"
+	"github.com/AikoPanel/Xray-core/transport"
+	"github.com/AikoPanel/Xray-core/transport/internet"
+	"github.com/AikoPanel/Xray-core/transport/pipe"
 	M "github.com/sagernet/sing/common/metadata"
 	N "github.com/sagernet/sing/common/network"
-	"github.com/xtls/xray-core/common/net"
-	"github.com/xtls/xray-core/common/net/cnc"
-	"github.com/xtls/xray-core/common/session"
-	"github.com/xtls/xray-core/proxy"
-	"github.com/xtls/xray-core/transport"
-	"github.com/xtls/xray-core/transport/internet"
-	"github.com/xtls/xray-core/transport/pipe"
 )
 
 var _ N.Dialer = (*XrayDialer)(nil)

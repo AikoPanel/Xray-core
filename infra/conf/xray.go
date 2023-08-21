@@ -7,12 +7,12 @@ import (
 	"os"
 	"strings"
 
-	"github.com/xtls/xray-core/app/dispatcher"
-	"github.com/xtls/xray-core/app/proxyman"
-	"github.com/xtls/xray-core/app/stats"
-	"github.com/xtls/xray-core/common/serial"
-	core "github.com/xtls/xray-core/core"
-	"github.com/xtls/xray-core/transport/internet"
+	"github.com/AikoPanel/Xray-core/app/dispatcher"
+	"github.com/AikoPanel/Xray-core/app/proxyman"
+	"github.com/AikoPanel/Xray-core/app/stats"
+	"github.com/AikoPanel/Xray-core/common/serial"
+	core "github.com/AikoPanel/Xray-core/core"
+	"github.com/AikoPanel/Xray-core/transport/internet"
 )
 
 var (
@@ -37,7 +37,6 @@ var (
 		"vmess":       func() interface{} { return new(VMessOutboundConfig) },
 		"trojan":      func() interface{} { return new(TrojanClientConfig) },
 		"dns":         func() interface{} { return new(DNSOutboundConfig) },
-		"wireguard":   func() interface{} { return new(WireGuardConfig) },
 	}, "protocol", "settings")
 
 	ctllog = log.New(os.Stderr, "xctl> ", 0)

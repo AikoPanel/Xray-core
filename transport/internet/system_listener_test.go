@@ -6,9 +6,9 @@ import (
 	"syscall"
 	"testing"
 
+	"github.com/AikoPanel/Xray-core/common"
+	"github.com/AikoPanel/Xray-core/transport/internet"
 	"github.com/sagernet/sing/common/control"
-	"github.com/xtls/xray-core/common"
-	"github.com/xtls/xray-core/transport/internet"
 )
 
 func TestRegisterListenerController(t *testing.T) {
